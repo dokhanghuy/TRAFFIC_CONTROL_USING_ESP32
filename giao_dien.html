@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BẢNG ĐIỀU KHIỂN ĐÈN GIAO THÔNG</title>
+</head>
+<body>
+<div class="app-container">
+        <!-- Thanh Tiêu đề (Navbar) -->
+        <header class="navbar">
+            <div class="nav-left">
+                <img src="img/traffic_light_logo.png" alt="Logo" class="logo" height="30">
+                <h1>VN_TRAFFIC_CTRL - HỆ THỐNG ĐIỀU KHIỂN GIAO THÔNG</h1>
+                <span class="sub-title">TRAFFIC LIGHT CONTROL PANEL</span>
+            </div>
+        </header>
+
+        <!-- Khu vực Chính -->
+        <main class="main-content">
+
+            <!-- Vùng Mô phỏng (Cảnh Giao thông) -->
+            <div class="simulation-area">
+                <img src="img/ngatu.jpeg" alt="Cảnh Giao thông Phố Cổ" class="scene-image" height="400">
+            </div>
+
+            <!-- Bảng Điều khiển -->
+            <aside class="control-panel">
+                <!-- Giao lộ đang chọn -->
+                <section class="current-intersection">
+                    <h2>GIAO LỘ ĐANG CHỌN</h2>
+                    <div class="intersection-selector">
+                        <span class="intersection-name">Phố Cổ Intersect 1 - Phường Hàng Bông</span>
+                        <div class="location-map">
+                            <img src="img/location_icon.png" alt="Location" class="location-icon" height="20">
+                            <span>Location map</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Chế độ vận hành -->
+                <section class="operation-mode">
+                    <h2>CHẾ ĐỘ VẬN HÀNH</h2>
+                    <div class="mode-toggles">
+                        <div class="toggle-group">
+                            <label class="toggle-switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                            <span class="toggle-label">TỰ ĐỘNG</span>
+                        </div>
+                        <div class="radio-group">
+                            <label><input type="radio" name="peak-mode" checked> GIỜ CAO ĐIỂM</label>
+                            <label><input type="radio" name="peak-mode"> GIỜ THẤP ĐIỂM</label>
+                            <label><input type="radio" name="peak-mode"> ĐÊM</label>
+                        </div>
+                        <div class="toggle-group">
+                            <label class="toggle-switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <span class="toggle-label">THỦ CÔNG</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Điều khiển thủ công -->
+                <section class="manual-control">
+                    <div class="manual-header">
+                        <h2>ĐIỀU KHIỂN THỦ CÔNG</h2>
+                        <img src="img/setting_icon.png" alt="Settings" class="settings-icon" height="20">
+                    </div>
+                    <p>PHÍA 1: LÊ LỢI (BẮC/NAM)</p>
+                    <div class="button-row">
+                        <button class="btn btn-red">RED</button>
+                        <button class="btn btn-yellow">YELLOW</button>
+                        <button class="btn btn-green">GREEN</button>
+                    </div>
+                    <p>PHÍA 2: TRẦN HƯNG ĐẠO (ĐÔNG/TÂY)</p>
+                    <div class="button-row">
+                        <button class="btn btn-red">RED</button>
+                        <button class="btn btn-yellow">YELLOW</button>
+                        <button class="btn btn-green">GREEN</button>
+                    </div>
+                </section>
+            </aside>
+        </main>
+
+    </div>
+
+</body>
+</html>
